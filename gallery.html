@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Галерея работ — живопись маслом, акварель, графика</title>
+<meta name="description" content="Галерея картин художника: работы маслом, акварелью, графика, абстракция. Пейзажи, портреты, натюрморты с описанием и ценой.">
+<meta name="keywords" content="галерея картин, картины маслом, акварель, графика, пейзаж, портрет, натюрморт">
+<link rel="canonical" href="https://artist-portfolio.netlify.app/gallery.html">
+<meta property="og:title" content="Галерея работ художника">
+<meta property="og:description" content="Живопись маслом, акварель, графика. Пейзажи, портреты, натюрморты.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://artist-portfolio.netlify.app/gallery.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ХУДОЖНИК</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="gallery.html" class="active">Галерея</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html">О художнике</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a> / <span>Галерея</span>
+    </nav>
+
+    <h1>Галерея работ</h1>
+    <p>Все работы выполнены вручную. Нажмите на карточку, чтобы посмотреть подробнее.</p>
+
+    <div class="filters">
+        <button class="active" data-filter="all">Все</button>
+        <button data-filter="oil">Масло</button>
+        <button data-filter="watercolor">Акварель</button>
+        <button data-filter="graphics">Графика</button>
+        <button data-filter="abstract">Абстракция</button>
+        <button data-filter="landscape">Пейзаж</button>
+        <button data-filter="portrait">Портрет</button>
+        <button data-filter="still">Натюрморт</button>
+    </div>
+
+    <div class="grid" id="grid">
+
+        <div class="card" itemscope itemtype="https://schema.org/Painting"
+             data-cat="oil landscape"
+             data-title="Закат над Волгой"
+             data-meta="Масло, 60x80, 2024"
+             data-desc="Пейзаж, написанный на закате. Тёплые тона, мягкий свет."
+             data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23c9a961'/><stop offset='1' stop-color='%238b6f3a'/></linearGradient></defs><rect fill='url(%23g)' width='600' height='400'/><text x='50%25' y='50%25' font-family='Arial' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle'>ПЕЙЗАЖ</text></svg>">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23c9a961'/><stop offset='1' stop-color='%238b6f3a'/></linearGradient></defs><rect fill='url(%23g)' width='400' height='300'/><text x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>ПЕЙЗАЖ</text></svg>" alt="Картина маслом «Закат над Волгой», пейзаж, 60x80 см, 2024 год">
+            <div class="info">
+                <h3 itemprop="name">Закат над Волгой</h3>
+                <p>Масло, 60x80, 2024</p>
+            </div>
+        </div>
+
+        <div class="card" itemscope itemtype="https://schema.org/Painting"
+             data-cat="oil portrait"
+             data-title="Портрет Анны"
+             data-meta="Масло, 50x70, 2024"
+             data-desc="Реалистичный портрет. Работа выполнена по фотографии."
+             data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%234a6fa5'/><stop offset='1' stop-color='%232c3e50'/></linearGradient></defs><rect fill='url(%23g)' width='600' height='400'/><text x='50%25' y='50%25' font-family='Arial' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle'>ПОРТРЕТ</text></svg>">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%234a6fa5'/><stop offset='1' stop-color='%232c3e50'/></linearGradient></defs><rect fill='url(%23g)' width='400' height='300'/><text x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>ПОРТРЕТ</text></svg>" alt="Портрет маслом «Портрет Анны», 50x70 см, 2024 год">
+            <div class="info">
+                <h3 itemprop="name">Портрет Анны</h3>
+                <p>Масло, 50x70, 2024</p>
+            </div>
+        </div>
+
+        <div class="card" itemscope itemtype="https://schema.org/Painting"
+             data-cat="watercolor still"
+             data-title="Утренний свет"
+             data-meta="Акварель, 40x50, 2023"
+             data-desc="Натюрморт с цветами и фруктами. Прозрачные акварельные слои."
+             data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%236b8e23'/><stop offset='1' stop-color='%233d5014'/></linearGradient></defs><rect fill='url(%23g)' width='600' height='400'/><text x='50%25' y='50%25' font-family='Arial' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle'>НАТЮРМОРТ</text></svg>">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%236b8e23'/><stop offset='1' stop-color='%233d5014'/></linearGradient></defs><rect fill='url(%23g)' width='400' height='300'/><text x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>НАТЮРМОРТ</text></svg>" alt="Акварельный натюрморт «Утренний свет», 40x50 см, 2023 год">
+            <div class="info">
+                <h3 itemprop="name">Утренний свет</h3>
+                <p>Акварель, 40x50, 2023</p>
+            </div>
+        </div>
+
+        <div class="card" itemscope itemtype="https://schema.org/Painting"
+             data-cat="abstract"
+             data-title="Форма и цвет"
+             data-meta="Акрил, 70x70, 2023"
+             data-desc="Абстрактная композиция. Игра геометрических форм."
+             data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23e67e22'/><stop offset='1' stop-color='%23c0392b'/></linearGradient></defs><rect fill='url(%23g)' width='600' height='400'/><text x='50%25' y='50%25' font-family='Arial' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle'>АБСТРАКЦИЯ</text></svg>">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23e67e22'/><stop offset='1' stop-color='%23c0392b'/></linearGradient></defs><rect fill='url(%23g)' width='400' height='300'/><text x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>АБСТРАКЦИЯ</text></svg>" alt="Абстрактная картина акрилом «Форма и цвет», 70x70 см, 2023 год">
+            <div class="info">
+                <h3 itemprop="name">Форма и цвет</h3>
+                <p>Акрил, 70x70, 2023</p>
+            </div>
+        </div>
+
+        <div class="card" itemscope itemtype="https://schema.org/Painting"
+             data-cat="graphics portrait"
+             data-title="Набросок"
+             data-meta="Графика, 30x40, 2022"
+             data-desc="Карандашный портрет. Быстрый набросок с натуры."
+             data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><rect fill='%23333' width='600' height='400'/><text x='50%25' y='50%25' font-family='Arial' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle'>ГРАФИКА</text></svg>">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect fill='%23333' width='400' height='300'/><text x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>ГРАФИКА</text></svg>" alt="Графический портрет карандашом «Набросок», 30x40 см, 2022 год">
+            <div class="info">
+                <h3 itemprop="name">Набросок</h3>
+                <p>Графика, 30x40, 2022</p>
+            </div>
+        </div>
+
+        <div class="card" itemscope itemtype="https://schema.org/Painting"
+             data-cat="oil landscape"
+             data-title="Зимний лес"
+             data-meta="Масло, 50x70, 2023"
+             data-desc="Зимний пейзаж. Холодные тона, глубокие тени."
+             data-img="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2395a5a6'/><stop offset='1' stop-color='%232c3e50'/></linearGradient></defs><rect fill='url(%23g)' width='600' height='400'/><text x='50%25' y='50%25' font-family='Arial' font-size='32' fill='white' text-anchor='middle' dominant-baseline='middle'>ЗИМА</text></svg>">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2395a5a6'/><stop offset='1' stop-color='%232c3e50'/></linearGradient></defs><rect fill='url(%23g)' width='400' height='300'/><text x='50%25' y='50%25' font-family='Arial' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'>ЗИМА</text></svg>" alt="Картина маслом «Зимний лес», пейзаж, 50x70 см, 2023 год">
+            <div class="info">
+                <h3 itemprop="name">Зимний лес</h3>
+                <p>Масло, 50x70, 2023</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="modal-overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="modal">
+        <button class="modal-close" id="close" aria-label="Закрыть">&times;</button>
+        <img id="mImage" src="" alt="">
+        <div class="modal-info">
+            <h2 id="mTitle"></h2>
+            <div class="modal-meta" id="mMeta"></div>
+            <p id="mDesc"></p>
+            <a href="contacts.html" class="btn">Заказать похожую</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Портфолио художника, 2026. <a href="contacts.html">Связаться</a></p>
+</footer>
+
+<script>
+    const filterButtons = document.querySelectorAll('.filters button');
+    const cards = document.querySelectorAll('#grid .card');
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const filter = btn.dataset.filter;
+            cards.forEach(card => {
+                if (filter === 'all' || card.dataset.cat.includes(filter)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    const overlay = document.getElementById('overlay');
+    const closeBtn = document.getElementById('close');
+    const mTitle = document.getElementById('mTitle');
+    const mMeta = document.getElementById('mMeta');
+    const mDesc = document.getElementById('mDesc');
+    const mImage = document.getElementById('mImage');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            mTitle.textContent = card.dataset.title;
+            mMeta.textContent = card.dataset.meta;
+            mDesc.textContent = card.dataset.desc;
+            mImage.src = card.dataset.img;
+            mImage.alt = 'Картина «' + card.dataset.title + '», ' + card.dataset.meta;
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+
+    function closeModal() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+
+</body>
+</html>

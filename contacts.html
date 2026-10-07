@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты — заказать картину или портрет</title>
+<meta name="description" content="Свяжитесь с художником: форма заявки, email, телефон, соцсети. Отвечу в течение дня. Заказать картину или портрет по фото.">
+<meta name="keywords" content="заказать картину, контакты художника, форма заявки">
+<link rel="canonical" href="https://artist-portfolio.netlify.app/contacts.html">
+<meta property="og:title" content="Контакты — заказать картину">
+<meta property="og:description" content="Форма заявки, email, телефон, соцсети.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://artist-portfolio.netlify.app/contacts.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">ХУДОЖНИК</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="gallery.html">Галерея</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="about.html">О художнике</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="index.html">Главная</a> / <span>Контакты</span>
+    </nav>
+
+    <h1>Контакты</h1>
+    <p>Оставьте заявку — отвечу в течение дня. Опишите идею, укажите бюджет и сроки.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Спасибо! Заявка отправлена.'); this.reset();">
+        <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" required placeholder="Иван">
+        </div>
+        <div class="form-group">
+            <label for="contact">Email или телефон</label>
+            <input type="text" id="contact" name="contact" required placeholder="example@mail.ru">
+        </div>
+        <div class="form-group">
+            <label for="type">Что нужно нарисовать</label>
+            <select id="type" name="type">
+                <option>Картина на заказ</option>
+                <option>Портрет по фото</option>
+                <option>Картина по фото</option>
+                <option>Другое</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="budget">Бюджет</label>
+            <input type="text" id="budget" name="budget" placeholder="от 10 000 руб.">
+        </div>
+        <div class="form-group">
+            <label for="msg">Описание</label>
+            <textarea id="msg" name="msg" placeholder="Опишите идею, размер, сроки..."></textarea>
+        </div>
+        <button type="submit" class="btn">Отправить заявку</button>
+    </form>
+
+    <h2>Другие способы связи</h2>
+    <ul class="list">
+        <li><strong>Email:</strong> artist@example.com</li>
+        <li><strong>Телефон:</strong> +7 (900) 000-00-00</li>
+        <li><strong>Соцсети:</strong> VK, Telegram</li>
+        <li><strong>Город:</strong> Тула</li>
+    </ul>
+</div>
+
+<footer>
+    <p>Портфолио художника, 2026. <a href="contacts.html">Связаться</a></p>
+</footer>
+
+</body>
+</html>
